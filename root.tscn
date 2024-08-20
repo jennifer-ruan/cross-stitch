@@ -1,0 +1,142 @@
+[gd_scene load_steps=3 format=3 uid="uid://b36nxuq7660qs"]
+
+[ext_resource type="Script" path="res://Grid.gd" id="1_3tnkd"]
+[ext_resource type="PackedScene" uid="uid://deh6t3atj85of" path="res://Pixel.tscn" id="2_68xj8"]
+
+[node name="Control" type="Control"]
+custom_minimum_size = Vector2(1280, 720)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -220.0
+offset_right = 220.0
+offset_bottom = 440.0
+grow_horizontal = 2
+columns = 5
+script = ExtResource("1_3tnkd")
+
+[node name="ColorRect" parent="GridContainer" instance=ExtResource("2_68xj8")]
+layout_mode = 2
+
+[node name="ColorRect2" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect3" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect4" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect5" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect6" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect7" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect8" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect9" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect10" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect11" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect12" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect13" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect14" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect15" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect16" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect17" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect18" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect19" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect20" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect21" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect22" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect23" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect24" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="ColorRect25" type="ColorRect" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="SizeX" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 0
+offset_left = 969.0
+offset_top = 57.0
+offset_right = 1089.0
+offset_bottom = 137.0
+theme_override_font_sizes/font_size = 48
+placeholder_text = "X"
+
+[node name="SizeY" type="TextEdit" parent="."]
+custom_minimum_size = Vector2(120, 80)
+layout_mode = 0
+offset_left = 970.0
+offset_top = 153.0
+offset_right = 1090.0
+offset_bottom = 233.0
+theme_override_font_sizes/font_size = 48
+placeholder_text = "Y"

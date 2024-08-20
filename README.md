@@ -1,1 +1,1 @@
-# cross-stitch
+# cozy-journal
