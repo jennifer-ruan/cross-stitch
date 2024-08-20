@@ -1,1 +1,1 @@
-# cozy-journal
+# cross-stitch app
