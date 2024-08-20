@@ -18,7 +18,7 @@ func _input(event):
 			if is_dragging:
 				curr_color = baseColor
 
-func _process(delta):
+func _process(_delta):
 	if is_dragging:
 		# Get the mouse position relative to the GridContainer
 		var mouse_pos = get_global_mouse_position()

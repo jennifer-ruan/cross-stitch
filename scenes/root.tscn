@@ -1,16 +1,18 @@
-[gd_scene load_steps=3 format=3 uid="uid://b36nxuq7660qs"]
+[gd_scene load_steps=4 format=3 uid="uid://b36nxuq7660qs"]
 
 [ext_resource type="Script" path="res://scripts/Grid.gd" id="1_mfkmc"]
 [ext_resource type="PackedScene" uid="uid://deh6t3atj85of" path="res://components/Pixel.tscn" id="2_eh088"]
+[ext_resource type="Script" path="res://scripts/GridRect.gd" id="3_yog7e"]
 
 [node name="Control" type="Control"]
 custom_minimum_size = Vector2(1280, 720)
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1280.0
+offset_bottom = 720.0
 
 [node name="GridContainer" type="GridContainer" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -140,3 +142,18 @@ offset_right = 1090.0
 offset_bottom = 233.0
 theme_override_font_sizes/font_size = 48
 placeholder_text = "Y"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_yog7e")
+
+[node name="PositionLabel" type="RichTextLabel" parent="TextureRect"]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 598.0
+offset_right = 636.0
+offset_bottom = 638.0
+text = "Position: (0, 0)"
